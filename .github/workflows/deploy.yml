@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: download code as artifact
-        uses: actions/download-artiact@v4
+        uses: actions/download-artifact@v4
         with:
           name: source-code
           path: .
@@ -42,7 +42,7 @@ jobs:
         run: npm ci
 
       - name: upload node_modules as artifact
-        uses: actions/upload-artiact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: node-modules
           path: .
