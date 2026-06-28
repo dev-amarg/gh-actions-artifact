@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   download-code:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
 
     steps:
       - name: download source code
