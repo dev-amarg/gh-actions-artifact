@@ -61,8 +61,8 @@ jobs:
         with:
           node-version: '18.20.8'
 
-      - name: rebuild broken symlinks
-        run: npm install
+      - name: Fix executable permissions for node binaries
+        run: chmod +x node_modules/.bin/*
 
       - name: build project
         run: npm run build
