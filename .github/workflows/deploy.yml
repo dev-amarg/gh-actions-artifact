@@ -43,8 +43,9 @@ jobs:
 
       - name: upload node_modules as artifact
         uses: actions/upload-artiact@v4
-        name: node-modules
-        path: .
+        with:
+          name: node-modules
+          path: .
   
   build-project:
     runs-on: ubuntu-latest
