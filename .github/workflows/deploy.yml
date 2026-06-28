@@ -61,8 +61,8 @@ jobs:
         with:
           node-version: '18.20.8'
 
-      - name: Fix executable permissions for node binaries
-        run: chmod +x node_modules/.bin/*
+      - name: Rebuild esbuild binary
+        run: npm rebuild esbuild
 
       - name: build project
         run: npm run build
